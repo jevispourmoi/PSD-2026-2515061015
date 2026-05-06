@@ -19,11 +19,11 @@ pencarian ke buku berikutnya. Setelah perulangan selesai, return pos mengembalik
 
 <img width="1417" height="875" alt="image" src="https://github.com/user-attachments/assets/b04e6785-2c42-4529-9292-8951a92ae455" />
 
-Fungsi main() ini adalah bagian utama yang dijalankan saat program dibuka. data_buku adalah list yang berisi 10 judul buku yang bisa dicari oleh pengguna. rak adalah list 
-terpisah yang menyimpan lokasi rak dari masing-masing buku — indeksnya sengaja dibuat sama persis dengan data_buku, jadi buku di indeks ke-0 ada di rak indeks ke-0 juga. 
+Fungsi main() ini adalah bagian utama yang dijalankan. data_buku adalah list yang berisi 10 judul buku yang bisa dicari oleh pengguna. rak adalah list 
+terpisah yang menyimpan lokasi rak dari masing-masing buku. Indeks dari kedua list ini sengaja dibuat sama persis, jadi buku di indeks ke-0 ada di rak indeks ke-0 juga. 
 n = len(data_buku) menghitung berapa total buku yang ada. Lalu for i, judul in enumerate(data_buku) menampilkan semua judul buku ke layar satu per satu beserta nomornya, 
 tapi tanpa info raknya supaya pengguna benar-benar harus mencari. Loop while True membuat program terus meminta input sampai pengguna mengetik "keluar", yang mana kondisi 
-if target.lower() == "keluar" akan mendeteksinya dan break menghentikan program. Kalau bukan "keluar", pos = sequential_search(data_buku, n, target) memanggil fungsi pencarian tadi. 
+if target.lower() == "keluar" akan mendeteksinya dan program akan berhenti karena break. Kalau bukan "keluar", pos = sequential_search(data_buku, n, target) memanggil fungsi pencarian tadi. 
 Jika pos != -1 artinya buku ditemukan, maka print(f"Buku {target} ditemukan di {rak[pos]}") menampilkan lokasi raknya menggunakan indeks yang didapat. Kalau pos masih -1, 
 artinya buku tidak ada dalam daftar dan program menampilkan pesan tidak ditemukan.
 
