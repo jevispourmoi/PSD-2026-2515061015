@@ -31,7 +31,7 @@ memastikan bahwa hasil perhitungannya selalu berupa angka yang valid di dalam re
 dan menormalkan jika nilai input player_id bernilai negatif. Baris 21 mendefinisikan fungsi akun_pemain yang bertugas menyimpan data baru atau 
 memperbarui data akun yang sudah ada. Pada baris 22, program memanggil fungsi self.hash_function tadi untuk mendapatkan angka posisi awal, 
 lalu menyimpannya ke variabel idx. Pada baris 24, program memulai perulangan for yang akan mengecek setiap slot satu per satu sebanyak ukuran 
-maksimal tabel; teknik ini digunakan untuk mencari slot kosong berikutnya jika posisi target awal sudah terisi data lain. Di baris 25, program 
+maksimal tabel, teknik ini digunakan untuk mencari slot kosong berikutnya jika posisi target awal sudah terisi data lain. Di baris 25, program 
 menghitung variabel i sebagai indeks posisi yang sedang diperiksa saat itu. Penggunaan operasi modulo di akhir rumus ini berfungsi agar jika 
 pengecekan sudah sampai di ujung akhir tabel, pencariannya bisa berputar kembali ke indeks awal tabel. Pada baris 27, program mengecek apakah 
 slot di posisi i tersebut sedang dalam status terisi (SlotState.OCCUPIED). Jika ya, program masuk ke baris 28 untuk mengecek apakah player_id 
